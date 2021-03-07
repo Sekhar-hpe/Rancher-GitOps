@@ -5,10 +5,10 @@ metadata:
   labels:
     app: wordpress
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 8082
+    #targetPort: 8082
   selector:
     app: wordpress
     tier: frontend
