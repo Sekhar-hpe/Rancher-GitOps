@@ -3,9 +3,9 @@ kind: Secret
 metadata:
   name: mysql-pass
   namespace: default
-  type: Opaque
-    data:
-      password: password123
+type: Opaque
+data:
+  password: password123
 ---
 apiVersion: v1
 kind: Service
@@ -61,8 +61,8 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: mysql-pass
-              key: password
+              name: my-secret
+              key: mysql-pass
         livenessProbe:
           tcpSocket:
             port: 3306
