@@ -61,8 +61,8 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: my-secret
-              key: mysql-pass
+              name: mysql-pass
+              key: password
         livenessProbe:
           tcpSocket:
             port: 3306
