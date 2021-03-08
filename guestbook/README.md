@@ -1,0 +1,1 @@
+This example will deploy the Kubernetes sample guestbook application packaged as a Helm chart into the fleet-helm-example namespace. It will also deploy Rancher Monitoring helm charts into the cattle-monitoring-system namespace.
