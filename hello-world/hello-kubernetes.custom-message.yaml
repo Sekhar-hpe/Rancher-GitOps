@@ -31,4 +31,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: I just deployed this Hello-World V1.8 on Kubernetes!
+          value: I just deployed this Hello-World V1.80 on Kubernetes!
